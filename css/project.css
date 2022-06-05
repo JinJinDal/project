@@ -99,25 +99,24 @@ header ul > li {
     overflow: hidden;
     margin: 0px auto; 
     position: relative; 
+    filter: brightness(50%);
 }
 #wrap_video video{
     width: 100%;
 }
 #wrap_txt{
     position: absolute; 
-    top: 185px;
-    right: 185px;
+    top: 500px;
     width: 100%;
     z-index: 5;
+    text-align: center;
 }
-#wrap_txt p{
-    margin-top: -24px; 
-    text-align: left; 
-    font-size: 48px; 
-    margin-left: 370px;
+#wrap_txt #wrap_title{
+    font-size: 70px; 
     color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
 }
+#wrap_text{font-size: 20px; color: white;}
 #banner #banner_shadow{
     background-color: black;
     opacity: 0.5;
@@ -134,7 +133,7 @@ header ul > li {
 
 .circle{width: 100px; height: 100px; background: linear-gradient(45deg, #E374FF,#BF95F7,#8BC3EC,#49FFDE); border-radius: 75px; line-height:150px; position: relative; z-index: -1;}
 #circle1{width: 520px; height: 520px; border-radius: 50%; overflow: hidden; position: absolute; top: 450px; left: -60px;}
-#circle2{width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: absolute; top: 0px; right: 450px;}
+#circle2{width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: absolute; top: 0px; right: 20px;}
 
 
 #section_2{ height: 760px; margin-top: 70px; position: relative;}
@@ -145,7 +144,7 @@ header ul > li {
 #section_2_content{margin-bottom: 60px;}
 #section_2_content h3{ font-size: 40px; margin-bottom: 40px;}
 #section_2_content p{font-size: 25px; margin-bottom: 20px;}
-#section_2_2{margin-left: 200px;}
+#section_2_2{margin-left: 200px; margin-top: 60px;}
 #section_2_img{display: flex;}
 #section_2_img p{text-align: center; font-size: 20px}
 #section_2 #section_2_color{ font-size: 55px; color: #8A32FF; font-family: 'Baloo 2', cursive;}
@@ -160,7 +159,7 @@ header ul > li {
 .h_graph .g_bar span{position:absolute;top:0;right:-50px;width:40px;color:#767676;line-height:20px}
 
 #section_3{position: relative;}
-#section_3 #cm{margin-left: 300px;}
+#section_3 #cm{margin: 100px 0 100px 300px;}
   .box{
       padding: 0;
   }
