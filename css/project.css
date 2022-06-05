@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Noto+Sans+KR:wght@500;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 ul {
     list-style: none;
@@ -31,7 +34,6 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     background-color: white;
     box-shadow:gray 0 3px;
     margin: 0 auto;
@@ -61,8 +63,9 @@ header p{
     border-radius: 50%;
 }
 header #menu_list{
-    margin-left: 600px;
+    margin-left: 900px;
 }
+header #menu_list #menu{width: 400px; margin-right: 30px;}
 
 /* header h2 {
    margin-left:20px;
@@ -92,7 +95,7 @@ header ul > li {
 /*배너입니다*/
 #wrap_video{
     width: 100%; 
-    height: 500px; 
+    height: 800px; 
     overflow: hidden;
     margin: 0px auto; 
     position: relative; 
@@ -120,61 +123,152 @@ header ul > li {
     opacity: 0.5;
 }
 /*섹션1입니다*/
-#section_1 #Explanation{
-    display: flex;
-}
-#section_1 #Explanation #suv_1{
-    text-align: left;
-    padding:150px 0 100px 0;
-}
-#section_1 #Explanation #suv_1 p{
-    font-family: 'Noto Sans KR', sans-serif;
-    color: gray;
-    font-size: 25px;
-    word-spacing: 7px;
-    font-weight: 500;
-}
-#section_1 #Explanation #suv_1 h2{
-    color: rgb(196, 2, 255);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 25px;
-}
-#section_1 #Explanation #suv_1 h2 #section_name{
-    color: rgb(196, 2, 255);
-    font-size: 40px;
-}
-#section_1 #Explanation img{
-    padding: 80px 80px 80px 180px;
-}
+#section_1{height: 1200px; position: relative;}
+#section_1_1{margin:150px 0 0 300px;}
+#section_1 h2{font-family: 'Baloo 2', cursive; color: #BE8DFF; font-size: 75px; margin-bottom: 40px;}
+#section_1Text{height: 300px; margin: 250px 0 0 90px;}
+#section_1title{font-size: 50px;}
+#neyoung{font-size: 22px;}
+#section_1Text span{font-size: 55px; font-family:'Baloo 2', cursive;}
+#Explanation{display: flex;}
 
-#section_2{
-    height: 560px;
-    margin-top: 70px;
-}
-#section_2 #section_2_color{
-    font-size: 40px;
-    color: rgb(196, 2, 255);
-}
+.circle{width: 100px; height: 100px; background: linear-gradient(45deg, #E374FF,#BF95F7,#8BC3EC,#49FFDE); border-radius: 75px; line-height:150px; position: relative; z-index: -1;}
+#circle1{width: 520px; height: 520px; border-radius: 50%; overflow: hidden; position: absolute; top: 450px; left: -60px;}
+#circle2{width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: absolute; top: 0px; right: 450px;}
+
+
+#section_2{ height: 760px; margin-top: 70px; position: relative;}
+#sct_2{margin-left: 300px;}
+#section_2 #section_2_title{font-size: 50px; margin-bottom: 20px;}
+#section_2_ct{font-size: 22px; margin-bottom: 50px;}
+#sc_2_1{display: flex;}
+#section_2_content{margin-bottom: 60px;}
+#section_2_content h3{ font-size: 40px; margin-bottom: 40px;}
+#section_2_content p{font-size: 25px; margin-bottom: 20px;}
+#section_2_2{margin-left: 200px;}
+#section_2_img{display: flex;}
+#section_2_img p{text-align: center; font-size: 20px}
+#section_2 #section_2_color{ font-size: 55px; color: #8A32FF; font-family: 'Baloo 2', cursive;}
+#section_2_2 ul li{display: flex;}
 #section_2 #graphGroup{display: flex;}
-#temporary_img{background-color: black; width: 100px; height: 100px; border-radius: 100%;}
-.stats_graph_box{width: 300px;}
-.h_graph ul{margin:0 50px 0 50px;padding:1px 0 0 0; border-top:0;border-right:0;font-size:11px;font-family:Tahoma, Geneva, sans-serif;list-style:none}
-.h_graph li{border-radius: 40px 40px;background-color: #767676; height:12px; position:relative;margin:10px 0;vertical-align:top;white-space:nowrap}
-.h_graph .g_term{ position:absolute;top:0;left:-50px;width:40px;font-weight:bold;color:#767676;line-height:20px;text-align:right}
-.h_graph .g_bar{border-radius: 40px 40px; display:inline-block;position:relative;height:12px;border-left:0;background:rgb(196, 2, 255);}
+.stats_graph_box{width: 350px;}
+.h_graph{margin-left: 40px;}
+.h_graph ul{margin:0 -25px 0 50px;padding:1px 0 0 0; border-top:0;border-right:0;font-size:11px;font-family:Tahoma, Geneva, sans-serif;list-style:none}
+.h_graph li{border-radius: 40px 40px;background-color: #b6b6b6; height:13px; position:relative;margin:30px 0;vertical-align:top;white-space:nowrap}
+.h_graph .g_term{ position:absolute;top:0;left:-50px;width:40px;font-weight:bold;color:black;line-height:20px;text-align:right; font-size: 15px;}
+.h_graph .g_bar{border-radius: 40px 40px; display:inline-block;position:relative;height:13px;border-left:0;background:#8A32FF;}
 .h_graph .g_bar span{position:absolute;top:0;right:-50px;width:40px;color:#767676;line-height:20px}
 
-.graph_wrap {max-width: 800px;margin: 0 auto;padding:20px;}
-.graph_wrap .tit {font-size: 16px;font-weight: 500;color: #333333;}
-#graph_2 {position: relative;height: 185px;margin-top: 15px;}
-#graph_2 .y-axis {position: absolute;width: 100%;height: 100%;z-index: 1;}
-#graph_2 .y-axis li {position: relative;width:calc(100% - 20px);height: calc(100% / 8);margin-left: 20px;border-top: 1px solid #8c8c8c;text-align: left;}
-#graph_2 .y-axis li span {position: absolute;top: -7px;left: -20px;font-size: 12px;line-height: 1;}
-#graph_2 .bar {display: flex;position: absolute;left: 20px;bottom: 16px;width: calc(100% - 20px);height: calc(100% - 16px);justify-content: space-around;align-items: flex-end;text-align: center;z-index: 3;}
-#graph_2 .bar li {width: 100%;margin: 0 10px;}
-#graph_2 .bar li span {display: inline-block;max-width: 80px;width: 100%;height: 100%;background: #f1cb7e;}
-#graph_2 .bar:before {content:'';position: absolute;top: -2px;left: 3px;height: calc(100% + 4px);width: 1px;background: #8c8c8c;}
+#section_3{position: relative;}
+#section_3 #cm{margin-left: 300px;}
+  .box{
+      padding: 0;
+  }
+  .pull {position:relative;  margin: 30px 0 0 40px; padding: 20px; width:10   00px; height:60px; color: black; border-radius: 0 10px 10px 10px; 
+    background-color: white; box-shadow: gray 3px 3px 3px;}
+.pull:after {content:""; position: absolute; top: 0; left: -30px; border-right: 30px solid white;
+border-bottom: 30px solid transparent; box-shadow: gray 3px 3px 3px;}
+.pull_2 {position:relative;  margin: 30px 40px 0 40px; padding: 20px; width:10   00px; height:60px; color: black; border-radius: 0 10px 10px 10px; 
+background-color: white; box-shadow: gray 3px 3px 3px;}
+.pull_2:after {content:""; position: absolute; top: 0; right: -30px; border-left: 30px solid white; box-shadow: gray -1px -1px;
+ border-bottom: 30px solid transparent;}
+.text_box{display: flex;}
+.text_box1{margin-left: 400px;}
 
+#section_4{
+    height: 800px;
+    position: relative;
+}
+#section_4_background{
+    background-color: gray;
+    height: 100%;
+}
+#section_4 h2{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 40px;
+}
+#section_4 p{
+    font-size: 14px;
+    color: white;
+    padding-bottom: 40px;
+}
+#section_4 button{
+    background-color: #9B4FFF;
+    border: 0;
+    outline: 0;
+    width: 245px;
+    height: 58px;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+}
+#section_4 #content{
+    padding-top: 300px;
+    margin-left: 150px;
+}
+
+#section_5{
+    text-align: center;
+    height: 1080px;
+    border: 1px solid red;
+}
+#section_5 #section_5title{
+    font-size: 50px;
+}
+#section_5 #section_5_list{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#section_5 #picSet{
+    width: 1920px; height: 1080px; position: relative; margin: 0 auto; overflow: hidden;
+}
+#section_5 #picSet img{position: absolute; top: 0; transition: left 1s;}
+
+#section_6{margin-top: 100px;height: 1080px; font-family:  'Noto Sans KR', sans-serif;}
+#section_6_box{display: flex; margin-left: 320px;}
+#section_6title{text-align: center; font-size: 70px; margin-bottom: 100px; }
+.section_6_h3{text-align: center; font-size: 30px; padding-bottom: 20px; font: normal;}
+.list1_box{background-color: gray; width: 590px; height: 125px; border-radius: 10px; margin-bottom: 20px;}
+.list1{font-size: 36px; padding-top: 30px;}
+.list2_box{background-color: #9B4FFF; width: 590px; height: 125px; border-radius: 10px; margin-bottom: 20px;}
+.list2{font-size: 35px; padding-top: 30px;}
+.list3{font-size: 35px; padding-top: 15px;}
+#section_6_list1{text-align: center; margin-right: 100px;}
+#section_6_list1 h3{width: 590px;}
+#section_6_list2{text-align: center;} 
+#section_6_list2 h3{width: 590px;}
+
+#section_7{height: 1000px; text-align: center;}
+#section_7 h2{font-size: 50px;}
+#section_7 #suv{font-size: 20px;}
+#section_7_box{display: flex; margin: 100px 0 0 250px;}
+#graphName{display: flex; font-size: 35px;}
+#graphName p{width: 210px; margin-left: 60px;}
+#graphName #graphName1{margin-right: 250px;}
+#section_7TextBox{width: 100px;}
+
+
+#section_8{margin-left: 150px;}
+#section_8_1 #section_8title{font-size: 50px; margin-left: 30px;}
+#section_8title span{font-family:'Baloo 2', cursive; color: #8A32FF; font-size: 55px;}
+#section_8text{font-size: 20px;  margin: 0 30px 50px 30px;}
+#section_8_img{display: flex;}
+#section_8_img_1 #i1{left: -40px; position: relative;}
+#section_8_img_2{height: 400px; margin-top: 350px;}
+
+
+#section_9{height: 1300px; position: relative;}
+#section_9 img{filter:brightness(50%);}
+#section_9_1{text-align: center; color: white; z-index: 1; position: absolute; align-items: center; left: 700px; top: 400px;}
+#section_9_1 h2{font-size: 55px; margin-bottom: 30px;}
+#section_9text{margin-bottom: 80px;}
+#section_9btn{background-color: #8A32FF; width: 589px; height: 117px; font-size: 35px; border-radius: 10px;}
+#section_9btn p{padding-top: 25px; font-size: 35px;}
 /* Footer구간입니다. */
 footer{
     background-color: rgb(80, 80, 80);
@@ -196,7 +290,7 @@ footer .nav_wrap img{
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1500px;
     margin: auto 187px;
     padding: 0;
     box-sizing: border-box;
@@ -234,3 +328,7 @@ footer .sitemap_set li{
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
 }
+footer #footer_bottom{display: flex;}
+footer #footer_icon{display: flex; margin: 20px 0 0 900px;}
+footer #footer_icon li{width: 70px;}
+footer #footer_icon img{margin: 0; padding: 0;}
