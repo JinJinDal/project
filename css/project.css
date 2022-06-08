@@ -121,7 +121,7 @@ header ul > li {
 }
 /*섹션1입니다*/
 #section_1{height: 1200px; width: 100%; position: relative; overflow: hidden;}
-#section_1_1{margin:150px 0 0 300px;}
+#section_1_1{margin:10% 0 0 13%;}
 #section_1 h2{font-family: 'Baloo 2', cursive; color: #BE8DFF; font-size: 75px; margin-bottom: 40px;}
 #section_1Text{height: 300px; margin: 250px 0 0 90px;}
 #section_1title{font-size: 50px;}
@@ -144,7 +144,7 @@ header ul > li {
 #section_2_content{margin-bottom: 60px;}
 #section_2_content h3{ font-size: 40px; margin-bottom: 40px;}
 #section_2_content p{font-size: 25px; margin-bottom: 20px;}
-#section_2_2{margin-left: 100px; margin-top: 60px;}
+#section_2_2{margin-left: 2%; margin-top: 60px;}
 #section_2_img{display: flex;}
 #section_2_img p{text-align: center; font-size: 20px}
 #section_2 #section_2_color{ font-size: 55px; color: #8A32FF; font-family: 'Baloo 2', cursive;}
