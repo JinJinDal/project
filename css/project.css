@@ -11,20 +11,17 @@
 ul {
     list-style: none;
 }
-
 header a {
     text-decoration: none;
     outline: none;
     color: gray;
 }
+header img{margin-right: 60%;}
 header #menu_list a:hover{
     color: rgb(195, 55, 238);
 }
-
 .page {
-    /* width: 1920px; */
-    margin: auto 187px;
-    box-shadow: gray 0 3px;
+    margin: auto 187px; 
 }
 body #head_shadow{
     box-shadow: gray 0 3px;
@@ -63,8 +60,9 @@ header p{
     border-radius: 50%;
 }
 header #menu_list{
-    margin-left: 900px;
+    float: right;
 }
+header #menu{float: right; margin-right: 180px;}
 header #menu_list #menu{width: 400px; margin-right: 30px;}
 
 /* header h2 {
@@ -99,7 +97,6 @@ header ul > li {
     overflow: hidden;
     margin: 0px auto; 
     position: relative; 
-    filter: brightness(50%);
 }
 #wrap_video video{
     width: 100%;
@@ -115,6 +112,7 @@ header ul > li {
     font-size: 70px; 
     color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
+    /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 #wrap_text{font-size: 20px; color: white;}
 #banner #banner_shadow{
@@ -122,7 +120,7 @@ header ul > li {
     opacity: 0.5;
 }
 /*섹션1입니다*/
-#section_1{height: 1200px; width: 100%; position: relative; overflow: hidden; border: 1px solid red;}
+#section_1{height: 1200px; width: 100%; position: relative; overflow: hidden;}
 #section_1_1{margin:150px 0 0 300px;}
 #section_1 h2{font-family: 'Baloo 2', cursive; color: #BE8DFF; font-size: 75px; margin-bottom: 40px;}
 #section_1Text{height: 300px; margin: 250px 0 0 90px;}
@@ -132,15 +130,15 @@ header ul > li {
 #Explanation{display: flex;}
 
 .circle{transition: all 1s; width: 100px; height: 100px; background: linear-gradient(45deg, #E374FF,#BF95F7,#8BC3EC,#49FFDE); border-radius: 75px; line-height:150px;z-index: -1;}
-#circle1{width: 520px; height: 520px; border-radius: 50%; overflow: hidden; position: absolute; top: 450px; left: -300px;}
-#circle2{width: 250px; height: 250px; border-radius: 50%; overflow: hidden; position: absolute; top: 0px; right: -200px;}
-#circle1.active{left: -60px;}
-#circle2.active{right: 60px;}
+#circle1{width: 520px; height: 520px; border-radius: 50%; position: absolute; top: 550px; left: -60px; opacity: 0;}
+#circle2{width: 250px; height: 250px; border-radius: 50%; position: absolute; top: 50px; right: 60px; opacity: 0;}
+#circle1.active{left: -60px; opacity: 1;}
+#circle2.active{right: 60px; opacity: 1;}
 
 
 #section_2{ height: 760px; margin-top: 70px; position: relative;}
 #sct_2{margin-left: 300px;}
-#section_2 #section_2_title{font-size: 50px; margin-bottom: 20px; opacity: 1; transition: all 1s; position: relative; top: 20px;}
+#section_2_title{font-size: 50px; margin-bottom: 20px; opacity: 0; transition: all 1s; position: relative; top: 20px;}
 #section_2_ct{font-size: 22px; margin-bottom: 50px;  opacity: 0; transition: all 1s; position: relative; top: 20px;}
 #sc_2_1{display: flex;}
 #section_2_content{margin-bottom: 60px;}
@@ -157,7 +155,7 @@ header ul > li {
 .h_graph ul{margin:0 -25px 0 50px;padding:1px 0 0 0; border-top:0;border-right:0;font-size:11px;font-family:Tahoma, Geneva, sans-serif;list-style:none}
 .h_graph li{border-radius: 40px 40px;background-color: #b6b6b6; height:13px; position:relative;margin:30px 0;vertical-align:top;white-space:nowrap}
 .h_graph .g_term{ position:absolute;top:0;left:-50px;width:40px;font-weight:bold;color:black;line-height:20px;text-align:right; font-size: 15px;}
-.h_graph .g_bar{border-radius: 40px 40px; display:inline-block;position:relative;height:13px;border-left:0;background:#8A32FF;}
+.h_graph .g_bar{border-radius: 40px 40px; display:inline-block;position:relative;height:13px;border-left:0;background:#8A32FF; }
 .h_graph .g_bar span{position:absolute;top:0;right:-50px;width:40px;color:#767676;line-height:20px}
 #section_2_ct.active{opacity: 1; top: 0;}
 #section_2_title.active{opacity: 1; top: 0;}
@@ -180,13 +178,14 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 #text_box.active{top: -200px;}
 #text_box1.active{top: -100px;}
 
-#section_4{ height: 800px; position: relative;  height: 1080px;}
+#section_4{ height: 800px; position: relative;  height: 1080px; background-size: cover; background-attachment: fixed;}
 #section_4 img{position: absolute; z-index: -1; overflow: hidden;}
 #section_4title{ font-size: 55px; color: white; padding-bottom: 40px;}
 #section_4text{ font-size: 20px; color: white; padding-bottom: 40px;}
 #section_4 button{ background-color: #9B4FFF; border: 0; outline: 0; width: 514px; height: 102px; text-align: center; border-radius: 25px 25px 25px 25px; color: white;}
+#section_4 button:hover{background-color: #8A32FF;}
 #section_4_btn{font-size: 35px;}
-#section_4 #content{ padding-top: 350px; margin-left: 150px;}
+#section_4 #content{ padding-top: 350px; padding-left: 150px;}
 
 #section_5{text-align: center; height: 1080px; border: 1px solid red; position: relative; background-color: white;}
 #section_5_list{float: left; list-style: none;}
@@ -198,8 +197,8 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 
 
 
-#section_6{margin-top: 100px;height: 1200px; font-family:  'Noto Sans KR', sans-serif;}
-#section_6_box{display: flex; margin-left: 320px;}
+#section_6{margin-top: 100px;height: 1200px; position: relative;}
+#section_6_box{display: flex; margin-left: 17%;}
 #section_6title{text-align: center; font-size: 70px; margin-bottom: 100px; }
 .section_6_h3{text-align: center; font-size: 30px; padding-bottom: 20px; font: normal;}
 .list1_box{background-color: gray; width: 590px; height: 125px; border-radius: 10px; margin-bottom: 20px;}
@@ -207,7 +206,7 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 .list2_box{background-color: #9B4FFF; width: 590px; height: 125px; border-radius: 10px; margin-bottom: 20px;}
 .list2{font-size: 35px; padding-top: 30px;}
 .list3{font-size: 35px; padding-top: 15px;}
-#section_6_list1{text-align: center; margin-right: 100px;}
+#section_6_list1{text-align: center; margin-right: 7%;}
 #section_6_list1 h3{width: 590px;}
 #section_6_list2{text-align: center;} 
 #section_6_list2 h3{width: 590px;}
@@ -216,19 +215,29 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 #section_7 h2{font-size: 50px;}
 #section_7 #suv{font-size: 20px;}
 #section_7_box{display: flex; margin: 100px 0 0 250px;}
+#section_7double{font-size: 70px; color: #9B4FFF; top: 60px; position: relative; opacity: 0;}
 #graphName{display: flex; font-size: 35px;}
-#graphName p{width: 210px; margin-left: 60px;}
-#graphName #graphName1{margin-right: 250px;}
+#graphName p{width: 220px; margin-left: 60px;}
+#graphName #graphName1{margin-right: 225px;}
 #section_7TextBox{width: 100px;}
+#section_7graph{display: flex; position: relative; height: 1px; margin-top: 480px;}
+#section_7box1{background-color: gray; width: 91px; height: 10px; position: absolute; border-radius: 10px 10px 0 0/ 10px 10px 0 0; left: 15%; bottom: 0;}
+#section_7box2{background: linear-gradient( #5ECFE4,#87B3EC,#A69EF3,#9B4FFF); width: 91px; height: 10px;position: absolute; border-radius: 10px 10px 0 0/ 10px 10px 0 0; right: 11%; bottom: 0;}
+#section_7line{background: #9B4FFF; width: 810px; height: 5px; }
+#section_7box1.active{opacity: 1; transition: all 1s; height: 183px;}
+#section_7box2.active{opacity: 1; transition: all 3s; height: 385px;}
+#section_7double.active{opacity: 1; transition: all 5s;}
 
 
 #section_8{margin-left: 150px; height: 1200px;}
-#section_8_1 #section_8title{font-size: 50px; margin-left: 30px;}
+#section_8title{font-size: 50px; margin-left: -1000px; opacity: 0;}
 #section_8title span{font-family:'Baloo 2', cursive; color: #8A32FF; font-size: 55px;}
-#section_8text{font-size: 20px;  margin: 0 30px 50px 30px;}
+#section_8text{font-size: 20px;  margin: 0 30px 50px -1000px; opacity: 0;}
 #section_8_img{display: flex;}
 #section_8_img_1 #i1{left: -40px; position: relative;}
 #section_8_img_2{height: 400px; margin-top: 350px;}
+#section_8title.active{margin-left: 30px; opacity: 1; transition: all 1s;}
+#section_8text.active{margin: 0 30px 50px 30px; opacity: 1; transition: all 1s;}
 
 
 #section_9{position: relative;}
@@ -237,7 +246,8 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 #section_9_1 h2{font-size: 55px; margin-bottom: 30px;}
 #section_9text{margin-bottom: 80px;}
 #section_9btn{background-color: #8A32FF; width: 589px; height: 117px; font-size: 35px; border-radius: 10px;}
-#section_9btn p{padding-top: 25px; font-size: 35px;}
+#section_9btn p{padding-top: 30px; font-size: 35px;}
+#section_9btn:hover{background-color: #9B4FFF;}
 
 
 
@@ -262,11 +272,13 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 #section_11text{color: white; font-size: 20px;}
 
 
-#section_12{height: 1500px; position: relative;}
+#section_12{height: 1500px; position: relative; overflow: hidden;}
 #section_12box{text-align: center; font-size: 50px; padding-top: 350px;}
 #section_12text{font-size: 35px;}
 #section_12_1{width: 500px; height: 500px; border-radius: 50%; overflow: hidden; position: absolute; top: -90px; left: -160px;}
-/* #section_12_2{width: 700px; height: 700px; border-radius: 50%; overflow: hidden; position: absolute; top: 1100px; left: 1500px;} */
+#section_12_2{width: 700px; height: 700px; border-radius: 50%; overflow: hidden; position: absolute; top: 1100px; left: 1500px;}
+#section_12img{opacity: 0; width: 0; height: 0;}
+#section_12img.active{opacity: 1; width: 285px; height: 285px; transition: all 1s;}
 
 /* Footer구간입니다. */
 footer{
