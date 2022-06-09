@@ -14,8 +14,8 @@ window.addEventListener("DOMContentLoaded",function(){
 var div2 = document.getElementsByClassName("section_10bt");
 
 function handleClick(event) {
-  console.log(event.target);
-  console.log(event.target.classList);
+//   console.log(event.target);
+//   console.log(event.target.classList);
 
   if (event.target.classList[1] === "clicked") {
     event.target.classList.remove("clicked");
@@ -39,7 +39,7 @@ init();
 
 window.addEventListener("DOMContentLoaded", function(){
     window.onscroll = function(){
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if(window.scrollY > 500){
             document.getElementById("circle1").classList.add("active");
         }else{
