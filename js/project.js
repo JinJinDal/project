@@ -39,7 +39,7 @@ init();
 
 window.addEventListener("DOMContentLoaded", function(){
     window.onscroll = function(){
-        // console.log(window.scrollY);
+        console.log(window.scrollY);
         if(window.scrollY > 500){
             document.getElementById("circle1").classList.add("active");
         }else{
@@ -62,39 +62,53 @@ window.addEventListener("DOMContentLoaded", function(){
         }else{
             document.getElementById("section_2_ct").classList.remove("active");
         }
+
+        if(window.scrollY > 1800){
+            document.getElementById("g_bar_1").classList.add("active");
+            document.getElementById("g_bar_2").classList.add("active");
+            document.getElementById("g_bar_3").classList.add("active");
+            document.getElementById("g_bar_4").classList.add("active");
+        }
+        else{
+            document.getElementById("g_bar_1").classList.remove("active");
+            document.getElementById("g_bar_2").classList.remove("active");
+            document.getElementById("g_bar_3").classList.remove("active");
+            document.getElementById("g_bar_4").classList.remove("active");
+        }
         
 
-        if(window.scrollY > 6000){
+        if(window.scrollY > 4800){
             document.getElementById("section_7box1").classList.add("active");
         }else{
             document.getElementById("section_7box1").classList.remove("active");
         }
-        if(window.scrollY > 6000){
+        if(window.scrollY > 4800){
             document.getElementById("section_7box2").classList.add("active");
         }else{
             document.getElementById("section_7box2").classList.remove("active");
         }
-        if(window.scrollY > 6500){
+        if(window.scrollY > 5200){
             document.getElementById("section_7double").classList.add("active");
         }else{
             document.getElementById("section_7double").classList.remove("active");
         }
 
-        if(window.scrollY > 7700){
+        if(window.scrollY > 6000){
             document.getElementById("section_8title").classList.add("active");
         }else{
             document.getElementById("section_8title").classList.remove("active");
         }
-        if(window.scrollY > 7700){
+        if(window.scrollY > 6000){
             document.getElementById("section_8text").classList.add("active");
         }else{
             document.getElementById("section_8text").classList.remove("active");
         }
 
-        if(window.scrollY > 12300){
+        if(window.scrollY > 11000){
             document.getElementById("section_12img").classList.add("active");
         }else{
             document.getElementById("section_12img").classList.remove("active");
         }
     }
 });
+
