@@ -224,7 +224,7 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 #section5 #ImgSet #prev_btn {left: -120px;}
 #section5 #ImgSet #next_btn {right: -120px;}
 
-#section5 #dotList {}
+
 #section5 #dotList li {margin: 0 20px; background-color: black; color: white; display: inline-block; width: 20px; height: 20px; border-radius: 50%; cursor: pointer;}
 #section5 #dotList li:hover {background-color: gray;}
 #section5 #dotList li.active {background-color: #9B4FFF;}
@@ -265,14 +265,13 @@ background-color: white; box-shadow: gray 3px 3px 3px;}
 
 
 #section_8{height: 1200px;}
-#section_8box{}
 #section_8title{font-size: 50px; margin-left: -1000px; opacity: 0;}
 #section_8title span{font-family:'Baloo 2', cursive; color: #8A32FF; font-size: 55px;}
 #section_8text{font-size: 20px;  margin: 0 30px 50px -1000px; opacity: 0;}
 #section_8_img{display: flex;}
 #section_8_img_1 #i1{left: 15px; position: relative;}
 #section_8_img_1 img{height: 660px;}
-#section_8_img_2 img{height: 300px; margin-left: 40px;}
+#section_8_img_2 img{height: 280px; margin-left: 40px;}
 #section_8_img_2{height: 400px; margin-top: 350px;}
 #section_8title.active{margin-left: 30px; opacity: 1; transition: all 1s;}
 #section_8text.active{margin: 0 30px 50px 30px; opacity: 1; transition: all 1s;}
@@ -326,8 +325,6 @@ footer a {
     text-decoration: none;
     outline: none;
     color: white;
-}
-footer .nav_wrap img{
 }
 .nav_wrap{
     padding: 60px 0 60px 0 ;
