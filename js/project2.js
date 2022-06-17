@@ -46,3 +46,15 @@ var moveFunction = function(){
     }
     document.getElementById("li" + moveNum).classList.add("active");
 }
+
+window.onload = function () {
+    var count = 0;
+    document.getElementById("section_2_text").innerText = count +"%";
+    var myTime = setInterval(function(){
+        if(count == 64){
+            clearInterval(myTime);
+        }
+        count++;
+        document.getElementById("section_2_text").innerText = count +"%";
+    }, 30);
+}

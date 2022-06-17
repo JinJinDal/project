@@ -152,10 +152,13 @@ header ul > li {
 #g_bar_3.active{width: 60%; transition: all 1s;}
 #g_bar_4{width: 0%;}
 #g_bar_4.active{width: 30%; transition: all 1s;}
+#g_bar_5{width: 0%;}
+#g_bar_5.active{width: 65%; transition: all 1s;}
 #section_2_title{font-size: 50px; margin-bottom: 20px; opacity: 0; transition: all 1s; position: relative; top: 20px;}
 #section_2_ct{font-size: 22px; margin-bottom: 50px;  opacity: 0; transition: all 1s; position: relative; top: 20px;}
 #sc_2_1{display: flex;}
 #section_2_content{margin-bottom: 60px;}
+#section_2_1{width: 600px;}
 #section_2_content h3{ font-size: 40px; margin-bottom: 40px;}
 #section_2_content p{font-size: 20px; margin-bottom: 20px;}
 #section_2_2{margin-left: 7%;}
@@ -170,9 +173,13 @@ header ul > li {
 .h_graph li{border-radius: 40px 40px;background-color: #b6b6b6; height:13px; position:relative;margin:30px 0;vertical-align:top;white-space:nowrap}
 .h_graph .g_term{ position:absolute;top:0;left:-50px;width:40px;font-weight:bold;color:black;line-height:20px;text-align:right; font-size: 15px;}
 .h_graph .g_bar{border-radius: 40px 40px; display:inline-block;position:relative;height:13px;border-left:0;background:#8A32FF; }
+.g_bar1{display:inline-block;width: 30px; height:100px;background:#8A32FF; }
 .h_graph .g_bar span{position:absolute;top:0;right:-50px;width:40px;color:#767676;line-height:20px}
 #section_2_ct.active{opacity: 1; top: 0;}
 #section_2_title.active{opacity: 1; top: 0;}
+#section_2_text{font-size: 50px; margin-top: 140px; margin-left: 20px;}
+#healty{display: flex;}
+#section_2graph{}
 
 #section_3{position: relative; height: 600px;}
 #section_3 #cm{margin-top: 70px;}

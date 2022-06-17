@@ -68,12 +68,14 @@ window.addEventListener("DOMContentLoaded", function(){
             document.getElementById("g_bar_2").classList.add("active");
             document.getElementById("g_bar_3").classList.add("active");
             document.getElementById("g_bar_4").classList.add("active");
+            document.getElementById("g_bar_5").classList.add("active");
         }
         else{
             document.getElementById("g_bar_1").classList.remove("active");
             document.getElementById("g_bar_2").classList.remove("active");
             document.getElementById("g_bar_3").classList.remove("active");
             document.getElementById("g_bar_4").classList.remove("active");
+            document.getElementById("g_bar_5").classList.remove("active");
         }
         
 
