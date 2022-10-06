@@ -47,6 +47,7 @@ var moveFunction = function(){
     document.getElementById("li" + moveNum).classList.add("active");
 }
 
+
 window.onload = function () {
     var count = 0;
     document.getElementById("section_2_text").innerText = count +"%";
@@ -57,4 +58,12 @@ window.onload = function () {
         count++;
         document.getElementById("section_2_text").innerText = count +"%";
     }, 30);
-}
+
+    
+};
+
+$("#scrollTop").click(function(){
+    console.log("click");
+    $("html, body").animate({scrollTop: 1}, 1000);
+});
+1

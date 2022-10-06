@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded",function(){
     window.onscroll = function(){
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if(window.scrollY>2950){
             document.getElementById("text_box").classList.add("active");
             document.getElementById("text_box1").classList.add("active");
@@ -37,9 +37,26 @@ function init() {
 init();
 
 
+
+
 window.addEventListener("DOMContentLoaded", function(){
     window.onscroll = function(){
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
+        if(document.querySelector("html").scrollTop > 100){
+            document.querySelector("#head_shadow").style.top = "-80px";
+        } else {
+            document.querySelector("header").style.top = "0px";
+        }
+        window.onmousemove = function(e){
+            if(e.clientY < 60){
+                document.querySelector("#head_shadow").style.top = "0px";
+            } else {
+            document.querySelector("#head_shadow").style.top = "-80px";
+            }
+        }
+
+
+
         if(window.scrollY > 500){
             document.getElementById("circle1").classList.add("active");
         }else{
@@ -47,8 +64,10 @@ window.addEventListener("DOMContentLoaded", function(){
         }
         if(window.scrollY > 150){
             document.getElementById("circle2").classList.add("active");
+            document.getElementById("scrollTop").classList.add("hide");
         }else{
             document.getElementById("circle2").classList.remove("active");
+            document.getElementById("scrollTop").classList.remove("hide");
         }
 
 
